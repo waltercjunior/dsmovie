@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 import './styles.css'
 
 function Form() {
     const movie = {
         id: 1,
-        image: "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfv0G1qHrcdidd.jpg",
+        image: "https://i.pinimg.com/originals/4c/dc/e1/4cdce167bae75ed83f4c3c7eae5cf637.png",
         title: "The Witcher",
         count: 2,
         score: 4.5
@@ -33,7 +34,9 @@ function Form() {
                         <button type="submit" className="btn btn-primary dsmovie-btn">Save</button>
                     </div>
                 </form>
-                <button className="btn btn-primary dsmovie-btn mt-3">Cancel</button>
+                <Link to="/">
+                    <button className="btn btn-primary dsmovie-btn mt-3">Cancel</button>
+                </Link>
             </div>
         </div>
     )
